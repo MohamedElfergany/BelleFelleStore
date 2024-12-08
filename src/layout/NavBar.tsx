@@ -1,6 +1,15 @@
 import searchIcon from "../assets/home/uil_search.svg";
 
+import { NavLink } from "react-router-dom";
 const NavBar = () => {
+  const NavLinks = [
+    { title: "Home", link: "/" },
+    { title: "Pages", link: "/pages" },
+    { title: "Products", link: "/products" },
+    { title: "Blog", link: "/blog" },
+    { title: "Shop", link: "/shop" },
+    { title: "Contant", link: "/contant" },
+  ];
   return (
     <>
       <div className="flex justify-around items-center w-full h-20 ">
@@ -10,35 +19,18 @@ const NavBar = () => {
           </div>
           <div>
             <ul className="flex justify-center items-center space-x-4 font-normal">
-              <li>
-                <a href="" className="active">Home</a>
-              </li>
-              <li>
-                <a href="">Pages</a>
-              </li>
-              <li>
-                <a href="">Prodects</a>
-              </li>
-              <li>
-                <a href="">Blog</a>
-              </li>
-              <li>
-                <a href="">Shop</a>
-              </li>
-              <li>
-                <a href="">Contant</a>
-              </li>
+              {NavLinks.map((link, index) => (
+                <li key={index}>
+                  <NavLink to={link.link} className="active:text-[#FB2E86]">{link.title}</NavLink>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
         <div>
           <label className="flex justify-between items-center border-4 ">
-            <input
-              type="text"
-              placeholder=""
-              className="border-spacing-3"
-            />
-            <img src={searchIcon} alt="searchIcon" className="bg-red-400  "/>
+            <input type="text" placeholder="" className="border-spacing-3" />
+            <img src={searchIcon} alt="searchIcon" className="bg-red-400  " />
           </label>
         </div>
       </div>

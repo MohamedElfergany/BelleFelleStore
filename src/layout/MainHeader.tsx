@@ -19,7 +19,13 @@ const MainHeader = () => {
             </div>
           </div>
           <div className="flex space-x-4 items-center ">
-            <div>English</div>
+            <select className="select  bg-[#7E33E0]">
+              <option  selected>
+                EN
+              </option>
+              <option>AR</option>
+              
+            </select>
             <div>USD</div>
             <div className="flex space-x-1">
               <p>Login</p>

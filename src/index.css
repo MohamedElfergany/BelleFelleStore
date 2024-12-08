@@ -14,3 +14,12 @@ body {
 font-size: 34px;
 
   }
+  .select{
+    height: 2rem;
+    min-height: 0;
+    
+  }
+  .select:focus {
+    box-shadow: none;
+   
+}
