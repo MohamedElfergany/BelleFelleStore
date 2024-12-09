@@ -26,7 +26,14 @@ const MainHeader = () => {
               <option>AR</option>
               
             </select>
-            <div>USD</div>
+            <div>
+            <select className="select border-none bg-[#7E33E0]">
+              <option  selected>
+                USD
+              </option>
+              <option>ARE</option>
+              </select>
+            </div>
             <div className="flex space-x-1">
               <p>Login</p>
               <img src={login} alt="login" />

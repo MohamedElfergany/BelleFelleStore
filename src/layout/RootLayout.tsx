@@ -11,7 +11,7 @@ const RootLayout = () => {
         <NavBar/>
         </header>
 
-      <main className="h-screen">
+      <main className="">
         <Outlet />
       </main>
      <Footer/>
