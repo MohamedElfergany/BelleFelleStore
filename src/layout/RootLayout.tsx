@@ -12,7 +12,10 @@ const RootLayout = () => {
         <NavBar/>
         </header>
 
-      <main className="px-36">
+
+      <main className="px-20">
+
+    
         <Outlet />
       </main>
      <Footer/>

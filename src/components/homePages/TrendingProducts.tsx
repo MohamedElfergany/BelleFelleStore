@@ -15,7 +15,7 @@ const TrendingProducts = () => {
     ];
   
     return (
-      <div className="container w-2/3 mx-auto py-10 space-y-8">
+      <div className="container  mx-auto py-10 space-y-8">
        
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {products.map((product, index) => (
