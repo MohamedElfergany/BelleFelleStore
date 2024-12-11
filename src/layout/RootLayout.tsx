@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import MainHeader from "./MainHeader";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
+import FooterUnderPage from "./FooterUnderPage";
 
 const RootLayout = () => {
   return (
@@ -15,6 +16,7 @@ const RootLayout = () => {
         <Outlet />
       </main>
      <Footer/>
+     <FooterUnderPage/>
      </>
   );
 };
