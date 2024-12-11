@@ -48,12 +48,12 @@ const Select: React.FC<SelectProps> = ({
 
   return (
     <div
-      className={clsx("relative dropdown", className)} // Add custom className
+      className={clsx("relative dropdown space-x-3", className)} // Add custom className
       ref={dropdownRef}
     >
       <button
         className={clsx(
-          "bg-white border border-gray-300 rounded-xl flex items-center justify-between px-3 py-2 w-full cursor-pointer",
+          "bg-white border text-[#8A8FB9] border-[#e5eaf2] flex items-center justify-between px-3 py-2 w-full cursor-pointer",
           className // Dynamically applied font size
         )}
         onClick={() => setIsActive(!isActive)}
@@ -61,14 +61,14 @@ const Select: React.FC<SelectProps> = ({
         {content}
         <IoChevronDown
           className={clsx(
-            "transition-all duration-300 text-lg",
+            "transition-all duration-300 text-xs text-[#8A8FB9]",
             { "rotate-180": isActive, "rotate-0": !isActive } // Rotate icon dynamically
           )}
         />
       </button>
       <div
         className={clsx(
-          "absolute top-12 left-0 z-40 bg-white rounded-xl w-full flex flex-col overflow-hidden transition-all duration-300 ease-in-out",
+          "absolute #8A8FB9 py-2 left-0 z-40 bg-white rounded-xl w-full flex flex-col overflow-hidden transition-all duration-300 ease-in-out",
           {
             "opacity-100 scale-100": isActive, // Visible state
             "opacity-0 scale-95": !isActive, // Hidden state
@@ -81,7 +81,7 @@ const Select: React.FC<SelectProps> = ({
         {options.map((option, index) => (
           <p
             className={clsx(
-              "py-2 px-4 hover:bg-gray-200 transition-all duration-200 cursor-pointer",
+              "py-2 px-4 text-[#8A8FB9] hover:bg-gray-200 transition-all duration-200 cursor-pointer",
               // Dynamically applied font size
               className
             )}

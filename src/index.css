@@ -22,4 +22,16 @@ font-size: 34px;
   .select:focus {
     box-shadow: none;
    
+    
+}
+/* Hide arrows for number inputs in most browsers */
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+/* Remove spinner arrows in WebKit browsers (Chrome, Safari, etc.) */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
