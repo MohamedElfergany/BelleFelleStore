@@ -3,12 +3,12 @@
 const FooterUnderPage = () => {
   return (
     <div className="">
-        <footer className="footer  items-center py-4 w-2/3 m-auto">
+        <footer className="footer items-center md:justify-between  justify-center md:items-start py-4 w-2/3 m-auto">
   <aside className="grid-flow-col items-center">
     
     <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
   </aside>
-  <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+  <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end text-center">
     <a>
       <svg
         xmlns="http://www.w3.org/2000/svg"

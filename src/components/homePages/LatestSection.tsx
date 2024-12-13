@@ -49,7 +49,6 @@ const LatestSection = () => {
     );
     if (selectedCategory) {
       setCurrentCategory(selectedCategory);
-      
     }
     setActive(categoryTitle)
   };
@@ -79,10 +78,10 @@ const LatestSection = () => {
      
         {currentCategory?.chairOne.map((chair, index) => (
           <div
-            className="card bg-base-100 shadow-xl p-4 w-80 flex flex-col justify-start items-center"
+            className="card   bg-SkyBlue  shadow-xl p-4 w-80 flex flex-col justify-start items-center"
             key={index}
           >
-            <figure className="px-4 pt-4 bg-SkyBlue w-full h-48 flex justify-center items-center">
+            <figure className="px-4 pt-4w-full h-48 flex justify-center items-center">
               <img
                 src={chair}
                 alt="Chair"

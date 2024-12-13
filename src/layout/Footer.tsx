@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <>
-      <footer className="footer bg-[#EEEFFB] text-base-content p-6 flex justify-center items-center">
+      <footer className="footer hidden bg-[#EEEFFB] text-base-content p-6 md:flex justify-center items-center">
         <div className="flex w-full justify-evenly items-start ">
           <form>
             <h6 className="footer-title text-4xl">Hakto</h6>

@@ -40,7 +40,7 @@ const handleIconClick = (index: number) => {
       <div className="flex overflow-hidden py-4">
         
         <div
-          className="flex transition-transform duration-500 " 
+          className="flex transition-transform justify-between  space-x-16 max-w-full  items-center duration-500 " 
           style={{
             transform: `translateX(-${currentIndex * 100}%)`,
             width: `${35 * totalPages}%`,
@@ -49,18 +49,20 @@ const handleIconClick = (index: number) => {
         >
           {imgChair.map((chair, index) => (
             <div
-              className="card bg-base-100 shadow-xl   flex-shrink-0 w-1/4 flex flex-col justify-start items-center group relative"
+            className="card shadow-xl bg-SkyBlue hover:scale-105 transition-all duration-300 
+            flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 
+            flex flex-col justify-start items-center group relative p-4"
               key={index}
             >
-              <figure className="px-4 pt-4 bg-SkyBlue w-full   flex flex-col justify-center items-center relative">
+              <figure className="px-4 pt-4 w-full h-48  flex flex-col justify-center items-center relative">
                 <img
                   src={chair.img}
                   alt="Chair"
-                  className="rounded-xl hover:scale-105 transition-all duration-300 l max-w-full"
+                  className="rounded-xl  l max-w-full"
                 />
               </figure>
-              <div className="card-body items-center text-center relative">
-              <button className="absolute  bg-green-700 p-2 rounded-md text-white opacity-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300">
+              <div className="card-body w-full hover:bg-Blue   transition-all duration-500 items-center  bg-white text-center relative">
+              <button className="  bg-green-700 p-2 rounded-md text-white opacity-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300">
                   View Details
                 </button>
                 <h2 className="card-title text-alex">{chair.name}</h2>
@@ -72,7 +74,7 @@ const handleIconClick = (index: number) => {
         </div>
       </div>
 
-      {/* الأيقونات */}
+     
       <div className="flex w-full justify-center gap-2 py-2">
         {Array.from({ length: totalPages }).map((_, index) => (
           <button

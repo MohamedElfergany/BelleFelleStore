@@ -42,15 +42,15 @@ const ShopexOffer = () => {
         ))}
       </div>
       <div className=" bg-SkyBlue my-4 ">
-        <div className="flex items-center justify-center ">
+        <div className="flex flex-col md:flex-row items-center justify-center ">
           <figure className="">
             <img src={imgHome} alt="Movie" className="w-100" />
           </figure>
-          <div className="flex flex-col items-start justify-between gap-6">
+          <div className="flex flex-col md:items-start items-center justify-between gap-6">
             <h2 className=" text-2xl font-bold w-80">
               Unique Features Of leatest & Trending Poducts
             </h2>
-            <ul className="menu-dropdown-toggle flex flex-col items-start justify-center gap-3">
+            <ul className="menu-dropdown-toggle pb-2 flex flex-col md:items-start items-center justify-center gap-3 text-center md:text-left">
               <li className="">
                 All frames constructed with hardwood solids and laminates
               </li>
@@ -61,7 +61,7 @@ const ShopexOffer = () => {
               <li>All frames constructed with hardwood solids and laminates</li>
             </ul>
 
-            <div className="flex justify-evenly space-x-4">
+            <div className="flex justify-evenly pb-2 space-x-4">
               <button className="btn bg-alex text-white">Add To Cart</button>
               <span>
                 <p>B&B Italian Sofa </p>
