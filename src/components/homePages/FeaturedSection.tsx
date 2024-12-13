@@ -35,7 +35,7 @@ const handleIconClick = (index: number) => {
   return (
     <div>
       <h2 className="text-center text-4xl font-bold text-offBlue mt-4 p-4">
-        Featured Products
+        Featured Products....
       </h2>
       <div className="flex overflow-hidden py-4">
         
