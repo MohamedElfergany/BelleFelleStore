@@ -15,6 +15,7 @@ import Products from "../pages/Products";
 import Pages from "../pages/Pages";
 import Shop from "../pages/Shop";
 import Contant from "../pages/Contant";
+import ProductDetails from "../pages/ProductDetails";
 
 const AppRoute = createBrowserRouter(
   createRoutesFromElements(
@@ -25,6 +26,7 @@ const AppRoute = createBrowserRouter(
       <Route path="/contant" element={<Contant />} />
       <Route path="/pages" element={<Pages />} />
       <Route path="/shop" element={<Shop />} />
+      <Route path="/productdetails" element={<ProductDetails />} />
     </Route>
   )
 );

@@ -8,19 +8,16 @@ const RootLayout = () => {
   return (
     <>
       <header>
-        <MainHeader/>
-        <NavBar/>
-        </header>
+        <MainHeader />
+        <NavBar />
+      </header>
 
-
-      <main className="px-20">
-
-    
+      <main className="px-20 py-10 ">
         <Outlet />
       </main>
-     <Footer/>
-     <FooterUnderPage/>
-     </>
+      <Footer />
+      <FooterUnderPage />
+    </>
   );
 };
 

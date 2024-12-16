@@ -4,6 +4,7 @@ import chairOne from "../../assets/Featured Products/image 1168.svg";
 import chairTwo from "../../assets/Featured Products/image 1169.svg";
 import chairThree from "../../assets/Featured Products/image 3.svg";
 import chairFour from "../../assets/Featured Products/image 1.svg";
+import { NavLink } from "react-router";
 
 const imgChair = [
   { img: chairOne, name: "Cantilever chair", code: "Y523201", price: "$42.00" },
@@ -62,9 +63,11 @@ const handleIconClick = (index: number) => {
                 />
               </figure>
               <div className="card-body w-full hover:bg-Blue   transition-all duration-500 items-center  bg-white text-center relative">
-              <button className="  bg-green-700 p-2 rounded-md text-white opacity-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300">
+            <NavLink to="/productdetails">
+            <button className="  bg-green-700 p-2 rounded-md text-white opacity-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300">
                   View Details
                 </button>
+            </NavLink>
                 <h2 className="card-title text-alex">{chair.name}</h2>
                 <p>{chair.code}</p>
                 <p>{chair.price}</p>

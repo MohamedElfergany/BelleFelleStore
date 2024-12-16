@@ -17,7 +17,8 @@ export default {
         PantonePurple: "#E0D3F5",
         SkyBlue: "#F3F9FF",
         NavyBlue: "#151875",
-        OffNavyBlue: "#3F509E"
+        OffNavyBlue: "#3F509E",
+        SkyGray:"#A9ACC6"
       }
     },
   },
